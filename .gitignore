@@ -1,0 +1,5 @@
+# ignore anything in the build directory
+build/*
+
+# ignore compiled files
+*.so
