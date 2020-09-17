@@ -244,9 +244,9 @@ PMatrix matrix_createWithValues() {
 	PMatrix matrix;
 	uint32_t width, height;
 	printf("enter matrix width: ");
-	scanf("%d", &width);
+	scanf("%u", &width);
 	printf("enter matrix height: ");
-	scanf("%d", &height);
+	scanf("%u", &height);
 	printf("%s", error_getErrorMessage(matrix_create(&matrix, height, width)));
 	for (uint32_t i = 0; i < height; i++) {
 		for (uint32_t j = 0; j < width; j++) {

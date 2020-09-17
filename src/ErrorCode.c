@@ -8,7 +8,7 @@
  * @param[in] code the error code.
  * @return whether the error code indicates a success or not.
  */
-bool error_isSuccess(ErrorCode code) {
+bool error_isSuccess(const ErrorCode code) {
 	return !code;
 }
 
@@ -18,7 +18,7 @@ bool error_isSuccess(ErrorCode code) {
  * @param[in] code the error code.
  * @return const char* the textual representation of the error code.
  */
-const char* error_getErrorMessage(ErrorCode code) {
+const char* error_getErrorMessage(const ErrorCode code) {
 	switch (code) {
 		case 0:
 			return "";
@@ -33,4 +33,5 @@ const char* error_getErrorMessage(ErrorCode code) {
 		case 5:
 			return "error code 5: matrix size/indeces must be positive\n";
 	}
+	return "";
 }

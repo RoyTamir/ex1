@@ -19,7 +19,7 @@ typedef enum {
  * @param[in] code the error code.
  * @return whether the error code indicates a success or not.
  */
-bool error_isSuccess(ErrorCode code);
+bool error_isSuccess(const ErrorCode code);
 
 /**
  * @brief gets a textual error message for a given error code.
