@@ -67,6 +67,7 @@ ErrorCode matrix_copy(PMatrix* result, CPMatrix source) {
  * @param matrix the matrix to destroy.
  */
 void matrix_destroy(PMatrix matrix) {
+	free(matrix -> topLeft);
 	free(matrix);
 }
 
